@@ -7,6 +7,27 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactComponent } from './contact/contact.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const myRoutes:Routes = [
+  {
+    path:"",
+    component:HomePageComponent
+  },
+  {
+    path:"about",
+    component:AboutusComponent
+  },
+  {
+    path:"gallery",
+    component:GalleryComponent
+  },
+  {
+    path:"contact",
+    component:ContactComponent
+  },
+]
 
 @NgModule({
   declarations: [
@@ -14,11 +35,13 @@ import { ContactComponent } from './contact/contact.component';
     HomePageComponent,
     AboutusComponent,
     GalleryComponent,
-    ContactComponent
+    ContactComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(myRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
