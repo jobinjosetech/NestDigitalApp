@@ -13,7 +13,7 @@ export class EmployeeLoginComponent {
 
   readValues=()=>{
     if(this.empid=="1122"&&this.password=="12345"){
-      this.route.navigate([""])
+      this.route.navigate(["/addcourse"])
     }else{
       alert("Not a valid credentials")
     }
