@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ViewAllCourseComponent } from './view-all-course/view-all-course.component';
 import { ViewAllFriendsComponent } from './view-all-friends/view-all-friends.component';
+import { ViewnavbarComponent } from './viewnavbar/viewnavbar.component';
 
 const myRoutes:Routes = [
   {
@@ -57,7 +58,8 @@ const myRoutes:Routes = [
     NavbarComponent,
     AdminLoginComponent,
     ViewAllCourseComponent,
-    ViewAllFriendsComponent
+    ViewAllFriendsComponent,
+    ViewnavbarComponent
   ],
   imports: [
     BrowserModule,
