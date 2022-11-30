@@ -17,6 +17,7 @@ import { ViewAllFriendsComponent } from './view-all-friends/view-all-friends.com
 import { ViewnavbarComponent } from './viewnavbar/viewnavbar.component';
 import { EmployeeLoginComponent } from './employee-login/employee-login.component';
 import { EmployeeRegComponent } from './employee-reg/employee-reg.component';
+import { AddCourseComponent } from './add-course/add-course.component';
 
 const myRoutes:Routes = [
   {
@@ -55,6 +56,11 @@ const myRoutes:Routes = [
     path:"employeereg",
     component:EmployeeRegComponent
   },
+  
+  {
+    path:"addcourse",
+    component:AddCourseComponent
+  },
 ]
 
 
@@ -71,7 +77,8 @@ const myRoutes:Routes = [
     ViewAllFriendsComponent,
     ViewnavbarComponent,
     EmployeeLoginComponent,
-    EmployeeRegComponent
+    EmployeeRegComponent,
+    AddCourseComponent
   ],
   imports: [
     BrowserModule,
