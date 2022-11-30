@@ -2,28 +2,40 @@
 <div class="container">
   <div class="row mt-4">
     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Id</th>
-            <th scope="col">Course Title</th>
-            <th scope="col">CourseDescription</th>
-            <th scope="col">Course Duration</th>
-            <th scope="col">Course Date</th>
-            <th scope="col">Course Venue</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let i of courses">
-            <td>{{i._id}}</td>
-            <td>{{i.courseTitle}}</td>
-            <td>{{i.courseDescription}}</td>
-            <td>{{i.courseDuration}}</td>
-            <td>{{i.courseDate}}</td>
-            <td>{{i.courseVenue}}</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+          <h1 class="text-center text-primary mb-4">Courses Details</h1>
+        </div>
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+          <table class="table justify-content-center  table-striped table-bordered mb-5">
+            <thead class="bg-light">
+              <tr>
+                <th class="text-center" scope="col">Course Title</th>
+                <th class="text-center" scope="col">CourseDescription</th>
+                <th class="text-center" scope="col">Course Duration</th>
+                <th class="text-center" scope="col">Course Date</th>
+                <th class="text-center" scope="col">Course Venue</th>
+              </tr>
+            </thead>
+            <tbody>
+              <ng-container *ngFor="let i of courses">
+                <ng-container
+                  *ngIf="i.courseTitle!=null && i.courseDescription!=null && i.courseDuration!=null && i.courseDate!=null && i.courseVenue!=null">
+                  <tr
+                    *ngIf="i.courseTitle!='' && i.courseDescription!='' && i.courseDuration!='' && i.courseDate!='' && i.courseVenue!=''">
+                    <td class="text-center">{{i.courseTitle}}</td>
+                    <td class="text-center">{{i.courseDescription}}</td>
+                    <td class="text-center">{{i.courseDuration}}</td>
+                    <td class="text-center">{{i.courseDate}}</td>
+                    <td class="text-center">{{i.courseVenue}}</td>
+                  </tr>
+                </ng-container>
+              </ng-container>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   </div>
 </div>
