@@ -31,10 +31,10 @@ export class EmployeeRegComponent {
 
   readValues=()=>{
     if(this.password==this.cpassword){
-      alert("Registered Successfully")
+      alert("Successfully registered! I can take you to the door😃")
       this.route.navigate(["/employeelogin"])
     }else{
-      alert("Password and confirm password not match")
+      alert("Ooops!!! Please verify your password🙂")
     }
   }
 }

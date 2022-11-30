@@ -10,6 +10,7 @@ export class ViewAllCourseComponent {
   constructor(private api:ApiService){
       api.fetchCourseData().subscribe(
         (response)=>{
+          console.log(response)
           this.courses = response
         }
       )

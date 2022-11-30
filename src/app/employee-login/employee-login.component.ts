@@ -15,7 +15,7 @@ export class EmployeeLoginComponent {
     if(this.empid=="1122"&&this.password=="12345"){
       this.route.navigate(["/addcourse"])
     }else{
-      alert("Not a valid credentials")
+      alert("Ooops!!! Please verify your credentials.🙂")
     }
   }
 }

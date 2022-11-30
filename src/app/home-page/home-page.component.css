@@ -1,0 +1,15 @@
+
+@media screen and (max-width: 750px) {
+    .carousel-caption h1{
+        font-size: 2rem !important;
+    }
+    .carousel-caption h5{
+        font-size: 0.8rem !important;
+    }
+    .carousel-caption {
+        top:10% !important;
+        bottom: auto;
+        left: 20%;
+        right:auto;
+    }
+  }

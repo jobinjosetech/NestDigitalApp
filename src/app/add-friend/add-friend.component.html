@@ -2,25 +2,35 @@
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <div class="row g-3 mt-4">
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label">Name</label>
-                    <input type="text" class="form-control"  name="name" [(ngModel)]="name">
+            <div class="row">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 d-flex justify-content-center">
+                    <img height="300px" src="assets/images/addfriend.svg" alt="">
                 </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="fomr-label">Friend Name</label>
-                    <input type="text" class="form-control" name="friendName" [(ngModel)]="friendName">
-                </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label">Describe Friend</label>
-                    <input type="text" class="form-control" name="DescribeYourFriend" [(ngModel)]="DescribeYourFriend">
-                </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label">Friend NickName</label>
-                    <input type="text" class="form-control" name="friendNickName" [(ngModel)]="friendNickName">
-                </div>
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button class="btn btn-primary" (click)="readValues()">Submit</button>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 mb-5">
+                    <div class="row g-3 mt-4">
+                        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                            <h1 class="text-primary">Add new friend</h1>
+                        </div>
+                        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <label for="" class="form-label text-secondary">Name</label>
+                            <input type="text" class="form-control"  name="name" [(ngModel)]="name" placeholder="Enter name...">
+                        </div>
+                        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <label for="" class="form-label text-secondary">Friend Name</label>
+                            <input type="text" class="form-control" name="friendName" [(ngModel)]="friendName" placeholder="Enter friend name...">
+                        </div>
+                        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <label for="" class="form-label text-secondary">Describe Friend</label>
+                            <input type="text" class="form-control" name="DescribeYourFriend" [(ngModel)]="DescribeYourFriend" placeholder="Enter description...">
+                        </div>
+                        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <label for="" class="form-label text-secondary">Friend NickName</label>
+                            <input type="text" class="form-control" name="friendNickName" [(ngModel)]="friendNickName" placeholder="Enter nickname...">
+                        </div>
+                        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 d-flex justify-content-center mt-4">
+                            <button class="btn btn-primary" (click)="readValues()">Add new friend ---></button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
