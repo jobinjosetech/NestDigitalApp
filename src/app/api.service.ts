@@ -9,4 +9,8 @@ export class ApiService {
   fetchCourseData = ()=>{
     return this.http.get('https://mylinkurcodesapp.herokuapp.com/getcourses')
   }
+
+  fetchAllFriends = () =>{
+    return this.http.get("https://dummyapifriends.herokuapp.com/view")
+  }
 }
