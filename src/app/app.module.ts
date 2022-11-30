@@ -11,6 +11,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ViewAllCourseComponent } from './view-all-course/view-all-course.component';
 
 const myRoutes:Routes = [
   {
@@ -33,6 +35,10 @@ const myRoutes:Routes = [
     path:"adminlogin",
     component:AdminLoginComponent
   },
+  {
+    path:"viewallcourse",
+    component:ViewAllCourseComponent
+  },
 ]
 
 
@@ -44,13 +50,15 @@ const myRoutes:Routes = [
     GalleryComponent,
     ContactComponent,
     NavbarComponent,
-    AdminLoginComponent
+    AdminLoginComponent,
+    ViewAllCourseComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(myRoutes),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
