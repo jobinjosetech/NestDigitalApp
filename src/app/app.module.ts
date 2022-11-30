@@ -13,6 +13,7 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ViewAllCourseComponent } from './view-all-course/view-all-course.component';
+import { ViewAllFriendsComponent } from './view-all-friends/view-all-friends.component';
 
 const myRoutes:Routes = [
   {
@@ -39,6 +40,10 @@ const myRoutes:Routes = [
     path:"viewallcourse",
     component:ViewAllCourseComponent
   },
+  {
+    path:"viewallfriends",
+    component:ViewAllFriendsComponent
+  },
 ]
 
 
@@ -51,7 +56,8 @@ const myRoutes:Routes = [
     ContactComponent,
     NavbarComponent,
     AdminLoginComponent,
-    ViewAllCourseComponent
+    ViewAllCourseComponent,
+    ViewAllFriendsComponent
   ],
   imports: [
     BrowserModule,
