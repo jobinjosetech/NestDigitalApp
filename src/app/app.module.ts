@@ -9,6 +9,8 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { ContactComponent } from './contact/contact.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule, Routes } from '@angular/router';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { FormsModule } from '@angular/forms';
 
 const myRoutes:Routes = [
   {
@@ -27,7 +29,12 @@ const myRoutes:Routes = [
     path:"contact",
     component:ContactComponent
   },
+  {
+    path:"adminlogin",
+    component:AdminLoginComponent
+  },
 ]
+
 
 @NgModule({
   declarations: [
@@ -36,12 +43,14 @@ const myRoutes:Routes = [
     AboutusComponent,
     GalleryComponent,
     ContactComponent,
-    NavbarComponent
+    NavbarComponent,
+    AdminLoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoutes)
+    RouterModule.forRoot(myRoutes),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
